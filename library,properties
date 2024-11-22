@@ -1,0 +1,10 @@
+name=BuzzerMelody
+version=1.0.0
+author=Jean Elias (JME Labs)
+maintainer=Jean Elias <jmelabs33@gmail.com>
+sentence=This library provides a simple solution for playing one or more melodies on piezoelectric passive buzzers using the arduino core tone function in a non-blocking way.
+paragraph=This library provides a simple solution for playing one or more melodies on piezoelectric passive buzzers using the arduino core tone function in a non-blocking way.
+category=Other
+url=https://github.com/jmelabs/buzzermelody
+architectures=*
+depends=
