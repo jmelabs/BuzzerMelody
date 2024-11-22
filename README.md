@@ -5,7 +5,6 @@ This library provides a simple solution for playing one or more melodies on piez
 
 ## Get Started
 To use more than one BuzzerMelody instance, the <i>Tone.cpp</i> Arduino core function needs to be updated.
-(This update was submitted via Pull Request, waiting to be officially incorporated).
 
 Each BuzzerMelody object will use a different Arduino Timer peripheral. So, the maximum number of melodies allowed to be played in parallel will depend on your Arduino/MCU platform. See the list below for a quick summary:
 
