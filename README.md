@@ -4,9 +4,9 @@
 This library provides a simple solution for playing one or more melodies on piezoelectric passive buzzers using the arduino core tone function in a non-blocking way.
 
 ## Get Started
-To use more than one BuzzerMelody instance, the <i>Tone.cpp</i> Arduino core function needs to be updated.
+To use more than one BuzzerMelody instance, the <i>Tone.cpp</i> Arduino core function needs to be updated (see https://github.com/arduino/ArduinoCore-avr/pull/581).
 
-Each BuzzerMelody object will use a different Arduino Timer peripheral. So, the maximum number of melodies allowed to be played in parallel will depend on your Arduino/MCU platform. See the list below for a quick summary:
+Each BuzzerMelody object will use a different Arduino/ESP32 Timer peripheral. So, the maximum number of melodies allowed to be played in parallel will depend on your Arduino/MCU platform. See the list below for a quick summary:
 
 | Arduino Platform (MCU)      | Number of Timers (Names)                  | Datasheet Link                                                                 |
 |-------------------------|-------------------------------------------|--------------------------------------------------------------------------------|
@@ -32,6 +32,11 @@ Create a BuzzerMelody object passing the following as arguments:
 - Buzzer Pin
 - Array of notes (see example). 
 - The total number of notes.
+
+Call the **loop** function in the main loop of your program.
+
+Call the **play** function to start or resume a melody.
+
 
 ## Single Melody example
 ### Main file
