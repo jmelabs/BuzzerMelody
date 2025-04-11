@@ -73,7 +73,7 @@ BuzzerMelody::BuzzerMelody(uint8_t buzzerPin, uint8_t buzzerChannel, uint16_t nu
   // Attach the pin to the LEDC PWM channel
   ledcAttachPin(_buzzerPin, _buzzerChannel);
   // Initialize channel with random frequency
-  ledcSetup(_buzzerChannel, 1000, 10);
+  ledcSetup(_buzzerChannel, 0, 10);
 
   _numOfNotes = numOfNotes;
   _melody = melody;

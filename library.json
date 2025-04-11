@@ -1,6 +1,6 @@
 {
     "name": "BuzzerMelody",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "This library provides a simple solution for playing one or more melodies on piezoelectric passive buzzers using the arduino core tone function in a non-blocking way.",
     "keywords": "buzzer, melody, player, music, note, tone, song",
     "repository":
